@@ -15,11 +15,22 @@ const SkillCard = ({ name, icon }) => (
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
-      boxShadow: "0px 0px 10px 15px rgba(254,140,180,0.1)",
+      boxShadow: "2px 3px 2px 3px rgba(0,0,0,0.2)",
+      padding: "10px",
     }}
+    variants={fadeIn("", "", 0.1, 1)}
   >
     <img src={icon} alt={name} style={{ width: "80px" }} />
-    <p style={{ fontWeight: "550", marginTop: "5px" }}>{name}</p>
+    <p
+      style={{
+        fontWeight: "400",
+        marginTop: "10px",
+        textAlign: "center",
+        textTransform: "uppercase",
+      }}
+    >
+      {name}
+    </p>
   </div>
 );
 
@@ -32,7 +43,7 @@ export default function Skills() {
       </motion.div>
       <div
         className="mt-20 flex flex-wrap gap-10"
-        style={{ justifyContent: "center" }}
+        style={{ justifyContent: "center", alignItems: "stretch" }}
       >
         {skills.map((skill, index) => (
           <SkillCard key={skill.title} index={index} {...skill} />
