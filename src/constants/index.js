@@ -39,7 +39,7 @@ export const navLinks = [
   },
 ];
 
-const skills = [
+const services = [
   {
     title: "Web Developer",
     icon: web,
@@ -58,7 +58,7 @@ const skills = [
   },
 ];
 
-const technologies = [
+const skills = [
   {
     name: "HTML 5",
     icon: html,
@@ -201,4 +201,4 @@ const projects = [
   },
 ];
 
-export { technologies, experiences, projects, skills };
+export { experiences, projects, services, skills };
