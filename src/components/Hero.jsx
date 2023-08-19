@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import Computer from "../assets/pngwing.com.png";
 
 const Hero = () => {
   return (
@@ -24,7 +25,18 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div
+        className="absolute w-full flex justify-center items-center"
+        style={{ bottom: "15%" }}
+      >
+        <img
+          src={Computer}
+          alt="lap"
+          style={{ width: "90%", maxWidth: "250px" }}
+        />
+      </div>
+
+      <div className="absolute bottom-2 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
