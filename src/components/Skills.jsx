@@ -34,13 +34,13 @@ const SkillCard = ({ name, icon }) => (
 
 function Skills() {
   return (
-    <section className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0 overflow-hidden">
+    <section className="max-w-7xl mx-auto relative z-0 overflow-hidden">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What do I know</p>
         <h2 className={styles.sectionHeadText}>Skills.</h2>
       </motion.div>
       <motion.div
-        className="mt-20 flex flex-wrap gap-10"
+        className="mt-20 flex flex-wrap gap-10 max-sm:gap-5"
         style={{ justifyContent: "center", alignItems: "stretch" }}
         variants={slideIn("left", "tween", 0.2, 0.5)}
       >

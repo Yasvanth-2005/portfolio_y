@@ -30,8 +30,12 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "services",
+    title: "Services",
+  },
+  {
     id: "work",
-    title: "Work",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -53,7 +57,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Java Developer",
+    title: "UI/UX Designer",
     icon: creator,
   },
 ];
@@ -197,7 +201,6 @@ const projects = [
       },
     ],
     image: teckzite,
-    source_code_link: "https://github.com/",
   },
 ];
 

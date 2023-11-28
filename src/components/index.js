@@ -12,6 +12,7 @@ import Works from "./Works";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Skills from "./Skills";
+import Services from "./Services";
 
 export {
   Hero,
@@ -26,4 +27,5 @@ export {
   ComputersCanvas,
   StarsCanvas,
   Skills,
+  Services,
 };

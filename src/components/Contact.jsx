@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -26,8 +27,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_r0jcplm",
-        "template_1t76uxq",
+        "service_yqql7go",
+        "template_moe11tj",
         {
           form_name: form.name,
           to_name: "Yasvanth Hanumantu",
@@ -35,12 +36,14 @@ const Contact = () => {
           to_email: "n210368@rguktn.ac.in",
           message: form.message,
         },
-        "Jqq9AvwIuSjoMiA5c"
+        "B9dwH1IgxKhBcs-nK"
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success(
+            "Thank you !..\n I will get back to you as soon as possible."
+          );
 
           setForm({
             name: "",
@@ -50,9 +53,7 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-
-          console.log(error);
-          alert("Something went wrong.");
+          toast.error("Something went wrong.");
         }
       );
   };
