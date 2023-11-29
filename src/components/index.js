@@ -13,10 +13,12 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Skills from "./Skills";
 import Services from "./Services";
+import Footer from "./Footer";
 
 export {
   Hero,
   Navbar,
+  Footer,
   About,
   Experience,
   Works,

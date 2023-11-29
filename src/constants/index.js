@@ -11,8 +11,8 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
+  mongodb,
   figma,
   docker,
   threejs,
@@ -22,6 +22,9 @@ import {
   ecrush,
   sdcac,
   teckzite,
+  giti,
+  insta,
+  linkedin,
 } from "../assets";
 
 export const navLinks = [
@@ -45,19 +48,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Native Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Development",
     icon: backend,
   },
   {
-    title: "UI/UX Designer",
+    title: "UI/UX Designing",
     icon: creator,
   },
 ];
@@ -204,4 +207,18 @@ const projects = [
   },
 ];
 
-export { experiences, projects, services, skills };
+const socialLinks = [
+  { link: "https://github.com/Yasvanth-2005/", name: "github", icon: giti },
+  {
+    link: "https://www.linkedin.com/in/yasvanth-hanumantu-269789255/",
+    name: "linkedin",
+    icon: linkedin,
+  },
+  {
+    link: "https://www.instagram.com/yasvanth_2/",
+    name: "instagram",
+    icon: insta,
+  },
+];
+
+export { experiences, projects, services, skills, socialLinks };

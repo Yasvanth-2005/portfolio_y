@@ -45,7 +45,7 @@ function Skills() {
         variants={slideIn("left", "tween", 0.2, 0.5)}
       >
         {skills.map((skill, index) => (
-          <SkillCard key={skill.title} index={index} {...skill} />
+          <SkillCard key={index} {...skill} />
         ))}
       </motion.div>
     </section>

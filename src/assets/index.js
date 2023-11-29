@@ -31,6 +31,10 @@ import sdcac from "./sdcac.png";
 import teckzite from "./teckzite.png";
 import ghms from "./ghms.png";
 
+import linkedin from "./linkedin.png";
+import insta from "./insta.png";
+import giti from "./git.png";
+
 export {
   logo,
   backend,
@@ -61,4 +65,7 @@ export {
   sdcac,
   teckzite,
   ghms,
+  insta,
+  linkedin,
+  giti,
 };
