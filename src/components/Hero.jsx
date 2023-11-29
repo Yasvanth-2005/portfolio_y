@@ -34,7 +34,7 @@ const Hero = () => {
             className="absolute right-[10%] top-[50%] max-lg:hidden w-[250px] h-[auto]"
           />
         </div> */}
-        <div className="absolute bottom-[30px] w-full flex justify-center items-center">
+        <div className="absolute bottom-[100px] w-full flex justify-center items-center">
           <a href="#about">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
               <motion.div
